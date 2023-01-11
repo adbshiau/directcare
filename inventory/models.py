@@ -20,4 +20,4 @@ class Item(models.Model):
     expiration_date = models.DateField(null=True)
 
     def __str__(self):
-        return f'{self.name} - {self.quantity}'
+        return f'{self.name} - {self.description}'
