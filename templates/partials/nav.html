@@ -1,7 +1,7 @@
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-info bg-primary">
+<nav class="navbar navbar-expand-lg navbar-primary bg-primary">
   <div class="container">
-    <a class="navbar-brand text-white" href="index.html">DC Inventory</a>
+    <a class="navbar-brand text-white" href="{% url 'inventory-index' %}">DC Inventory</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -17,7 +17,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link text-white" href="index.html"
+          <a class="nav-link text-white" href="{% url 'inventory-index' %}"
             >Dashboard <span class="sr-only">(current)</span></a
           >
         </li>

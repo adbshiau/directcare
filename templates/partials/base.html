@@ -16,10 +16,12 @@
       crossorigin="anonymous"
     />
 
-    <title>DC Inventory</title>
+    <title>{% block title %} {% endblock %}</title>
   </head>
   <body>
-    {% include 'partials/nav.html' %} {% include 'partials/topnav.html' %}
+    {% include 'partials/nav.html' %}
+
+    {% include 'partials/topnav.html' %}
 
     <!-- Optional JavaScript; choose one of the two! -->
 
