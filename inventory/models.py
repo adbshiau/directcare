@@ -26,14 +26,14 @@ class Item(models.Model):
     def __str__(self):
         return f'{self.name}'
 
-class Order(models.Model):
+class Requisition(models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE, null=True)
     staff = models.ForeignKey(User, models.CASCADE, null=True)
-    order_quantity = models.PositiveBigIntegerField(null=True)
+    quantity = models.PositiveBigIntegerField(null=True)
     date = models.DateTimeField(auto_now=True, null=True)
 
-    class Meta:
-        verbose_name_plural = 'Order Requests'
+    # class Meta:
+    #     verbose_name_plural = 'Requisition'
 
     def __str__(self):
-        return f'{self.order_quantity} {self.item} ordered by {self.staff.username}'
+        return f'{self.quantity} {self.item} requested by {self.staff.username}'

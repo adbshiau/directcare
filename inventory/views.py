@@ -6,3 +6,9 @@ def index(request):
 
 def staff(request):
     return render(request, "inventory/staff.html")
+
+def item(request):
+    return render(request, "inventory/item.html")
+
+def requisition(request):
+    return render(request, "inventory/requisition.html")

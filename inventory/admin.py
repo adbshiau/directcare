@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Item, Order
+from .models import Item, Requisition
 
 admin.site.site_header = 'DC Inventory Admin'
 
@@ -9,4 +9,4 @@ class ItemAdmin(admin.ModelAdmin):
 
 # Register your models here.
 admin.site.register(Item, ItemAdmin)
-admin.site.register(Order)
+admin.site.register(Requisition)
